@@ -1,0 +1,184 @@
+/* Define color variables */
+:root {
+  --background-color: hsl(0, 0%, 8%);
+  --text-color: hsl(0, 0%, 100%);
+  --card-background: hsl(0, 0%, 12%);
+  --link-background: hsl(0, 0%, 20%);
+  --link-hover-background: hsl(75, 94%, 57%);
+  --link-hover-text: hsl(0, 0%, 8%);
+  --user-info-color: hsl(75, 94%, 57%);
+  --attribution-color: hsl(228, 45%, 44%);
+}
+
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Adding custom fonts */
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/static/Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/static/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* Applying the font to the body */
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: var(--card-background);
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+.profile-img img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.user-info h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.user-info p {
+  color: var(--user-info-color);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.description p {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.links a {
+  display: block;
+  background-color: var(--link-background);
+  color: var(--text-color);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.links a:last-child {
+  margin-bottom: 0;
+}
+
+.links a:hover {
+  background-color: var(--link-hover-background);
+  color: var(--link-hover-text);
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: var(--attribution-color);
+  text-decoration: none;
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+  .card {
+    width: 400px;
+    padding: 30px;
+  }
+
+  .profile-img img {
+    width: 100px;
+  }
+
+  .user-info h2 {
+    font-size: 24px;
+  }
+
+  .user-info p {
+    font-size: 16px;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  .links a {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+/* Media query for desktops and larger screens */
+@media (min-width: 1024px) {
+  .card {
+    width: 500px;
+    padding: 30px;
+  }
+
+  .profile-img img {
+    width: 120px;
+  }
+
+  .user-info h2 {
+    font-size: 28px;
+  }
+
+  .user-info p {
+    font-size: 18px;
+  }
+
+  .description p {
+    font-size: 18px;
+  }
+
+  .links a {
+    padding: 20px;
+    font-size: 18px;
+  }
+}
