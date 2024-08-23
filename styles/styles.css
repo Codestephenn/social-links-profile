@@ -166,31 +166,3 @@ body {
   }
 }
 
-/* Media query for desktops and larger screens */
-@media (min-width: 1024px) {
-  .card {
-    width: 500px;
-    padding: 30px;
-  }
-
-  .profile-img img {
-    width: 120px;
-  }
-
-  .user-info h2 {
-    font-size: 28px;
-  }
-
-  .user-info p {
-    font-size: 18px;
-  }
-
-  .description p {
-    font-size: 18px;
-  }
-
-  .links a {
-    padding: 20px;
-    font-size: 18px;
-  }
-}
